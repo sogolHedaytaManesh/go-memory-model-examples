@@ -14,7 +14,7 @@ func IncrementWithMutex() {
 		wg.Add(1)
 		go func() {
 			mu.Lock()
-			counter++ // ✅ Safe increment
+			counter++ // Safe increment
 			mu.Unlock()
 			wg.Done()
 		}()

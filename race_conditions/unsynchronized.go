@@ -12,7 +12,7 @@ func UnsynchronizedIncrement() {
 	for i := 0; i < 1000; i++ {
 		wg.Add(1)
 		go func() {
-			counter++ // ⚠️ Data race occurs here
+			counter++ // Data race occurs here
 			wg.Done()
 		}()
 	}

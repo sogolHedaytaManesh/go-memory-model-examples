@@ -13,7 +13,7 @@ func AtomicIncrement() {
 	for i := 0; i < 1000; i++ {
 		wg.Add(1)
 		go func() {
-			atomic.AddInt64(&counter, 1) // ✅ atomic operation
+			atomic.AddInt64(&counter, 1) // atomic operation
 			wg.Done()
 		}()
 	}
