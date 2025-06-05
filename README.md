@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # go-memory-model-examples
 
 This repository contains practical Go code examples demonstrating key concepts from my Medium article on Go’s memory model and concurrency:
